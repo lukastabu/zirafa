@@ -7,7 +7,7 @@ function rand(min, max) {
 let o = rand(1, 6);
 let b = rand(10, 20);
 
-console.log(o, b);
+// console.log(o, b);
 
 
 // console.log('HeLLo KiTTy');
@@ -22,10 +22,26 @@ console.log(o, b);
 //     console.log('HeLLo KiTTy');
 // }
 
-let x;
+// let x;
+
+// do {
+//     x = rand(10, 20);
+//     console.log(x);
+// } while (x < 15);
+
+
+let monetosPuse;
 
 do {
-    console.log('HeLLo KiTTy');
-    x = rand(10, 20);
-    console.log(x);
-} while (x < 15);
+
+    monetosPuse = rand(1, 2);
+    console.log(monetosPuse);
+
+} while (monetosPuse != 2);
+
+// == ===> !=
+// != ===> ==
+// < ===> >=
+// > ===> <=
+// <= ===> >
+// >= ===> <
