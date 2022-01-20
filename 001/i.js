@@ -45,3 +45,12 @@ do {
 // > ===> <=
 // <= ===> >
 // >= ===> <
+
+let kauliukas;
+
+do {
+
+    kauliukas = rand(1, 6);
+    console.log(kauliukas);
+
+} while (kauliukas != 3);
