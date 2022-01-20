@@ -30,14 +30,14 @@ let b = rand(10, 20);
 // } while (x < 15);
 
 
-let monetosPuse;
+// let monetosPuse;
 
-do {
+// do {
 
-    monetosPuse = rand(1, 2);
-    console.log(monetosPuse);
+//     monetosPuse = rand(1, 2);
+//     console.log(monetosPuse);
 
-} while (monetosPuse != 2);
+// } while (monetosPuse != 2);
 
 // == ===> !=
 // != ===> ==
@@ -46,6 +46,31 @@ do {
 // <= ===> >
 // >= ===> <
 
+// let kauliukas;
+
+// do {
+
+//     kauliukas = rand(1, 6);
+//     console.log(kauliukas);
+
+// } while (kauliukas != 3);
+
+
+// let kauliukas;
+
+// do {
+
+//     kauliukas = rand(1, 6);
+//     console.log(kauliukas);
+
+// } while (kauliukas <= 3);
+
+
+// || ===> &&
+// && ===> ||
+
+
+
 let kauliukas;
 
 do {
@@ -53,4 +78,4 @@ do {
     kauliukas = rand(1, 6);
     console.log(kauliukas);
 
-} while (kauliukas != 3);
+} while (kauliukas != 2 && kauliukas != 5);
