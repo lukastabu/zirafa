@@ -89,7 +89,13 @@ let kibiras = 0;
 
 for (let i = 0; i < 20; i++) {
     let siuksliu = rand(5, 105);
-    kibiras += siuksliu;
+    // kibiras += siuksliu;
+    kibiras = kibiras + siuksliu;
 }
 
 console.log(kibiras);
+
+let x = 'Kiaulė';
+let y = 'Didelė';
+
+console.log(y + ' ' + x);
