@@ -72,6 +72,7 @@ let b = rand(10, 20);
 
 
 let kauliukas;
+let kiekMetimu = 0;
 
 do {
 
@@ -79,3 +80,17 @@ do {
     console.log(kauliukas);
 
 } while (kauliukas != 2 && kauliukas != 5);
+
+
+
+
+let i = 0;
+let kiek = 0;
+
+while (i < 5) {
+    i++;
+    kiek++;
+    console.log('Valio');
+}
+
+console.log(kiek);
