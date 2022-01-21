@@ -141,3 +141,40 @@ for (let i = 0; i < 20; i++) {
 }
 
 console.log(kibiras2, kiekKibire2);
+
+
+let kibrasBlue = 0;
+let kibirasGreen = 0;
+
+for (let i = 0; i < 20; i++) {
+
+    let siuksliu = rand(5, 105);
+    if (i % 2 == 0) {
+        kibrasBlue = kibrasBlue + siuksliu;
+    } else {
+        kibirasGreen = kibirasGreen + siuksliu;
+    }
+}
+
+console.log(kibrasBlue, kibirasGreen);
+
+
+
+
+console.log('------------------------------------------');
+
+
+let kibiras5 = 0;
+
+
+for (let i = 0; i < 20; i++) {
+    let siuksliu = rand(5, 105);
+
+    if (kibiras5 + siuksliu > 500) {
+        break;
+    }
+
+    kibiras5 = kibiras5 + siuksliu;
+}
+
+console.log(kibiras5);
