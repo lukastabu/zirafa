@@ -178,3 +178,17 @@ for (let i = 0; i < 20; i++) {
 }
 
 console.log(kibiras5);
+
+
+
+
+
+for (let ii = 0; ii < 5; ii++) {
+
+    let pliusai = '';
+    for (let i = 0; i < 100; i++) {
+        pliusai = pliusai + '+';
+    }
+    console.log(pliusai);
+
+}
