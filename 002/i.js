@@ -99,3 +99,45 @@ let x = 'Kiaulė';
 let y = 'Didelė';
 
 console.log(y + ' ' + x);
+
+
+
+console.log('------------------------------------------');
+
+let maisas = '';
+
+for (let i = 0; i < 400; i++) {
+    maisas = maisas + '*';
+}
+
+console.log(maisas);
+
+
+console.log('------------------------------------------');
+
+let kibiras1 = 0;
+
+for (let i = 0; i < 20; i++) {
+    let siuksliu = rand(5, 105);
+    if (siuksliu > 50) {
+        kibiras1 = kibiras1 + siuksliu;
+    }
+}
+
+console.log(kibiras1);
+
+
+console.log('------------------------------------------');
+
+let kibiras2 = 0;
+let kiekKibire2 = 0;
+
+for (let i = 0; i < 20; i++) {
+    let siuksliu = rand(5, 105);
+    if (siuksliu > 50) {
+        kibiras2 = kibiras2 + siuksliu;
+        kiekKibire2++;
+    }
+}
+
+console.log(kibiras2, kiekKibire2);
