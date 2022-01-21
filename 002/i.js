@@ -67,3 +67,29 @@ for (let i = 0; i < 10; i++) {
     }
 
 }
+
+
+console.log('------------------------------------------');
+
+for (let i = 0; i < 20; i++) {
+
+    let skaicius = rand(5, 105);
+
+    if (skaicius % 2 == 0) {
+        console.log(skaicius);
+    }
+
+}
+
+console.log('------------------------------------------');
+
+
+let kibiras = 0;
+
+
+for (let i = 0; i < 20; i++) {
+    let siuksliu = rand(5, 105);
+    kibiras += siuksliu;
+}
+
+console.log(kibiras);
