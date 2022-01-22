@@ -145,11 +145,39 @@ console.log('------------------------------------------');
 
 
 let didSk = namas2[0];
+let didSkV = 0;
 
 for (let i = 1; i < namas2.length; i++) {
     if (namas2[i] > didSk) {
         didSk = namas2[i];
+        didSkV = i;
     }
 }
 
-console.log(didSk);
+// console.log(didSk, didSkV);
+
+
+
+console.log('------------------------------------------');
+
+
+let maxValue;
+let maxValueIndexes = [];
+
+maxValue = namas2[0]
+maxValueIndexes.push(0);
+
+for (let i = 1; i < namas2.length; i++) {
+
+    if (namas2[i] > maxValue) {
+        maxValue = namas2[i];
+        maxValueIndexes = [];
+    }
+
+    if (namas2[i] == maxValue) {
+        maxValueIndexes.push(i);
+    }
+
+}
+
+console.log(maxValue, maxValueIndexes);
