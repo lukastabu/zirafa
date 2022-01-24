@@ -80,11 +80,39 @@ for (let i = 0; i < 5; i++) {
 }
 
 
+for (let i = 0; i < 5; i++) {
+    arr.push(-5);
+}
+
+
+for (let i = 0; i < 5; i++) {
+    arr.unshift(-10);
+}
+
+
+for (let i = 0; i < 5; i++) {
+    arr.pop();
+}
+
+
+for (let i = 0; i < 5; i++) {
+    arr.shift();
+}
+
+arr.splice(9, 10);
+
+console.table(arr);
+
+
+// arr.splice(4, 1, 0);
 
 
 
 
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 0) {
+        arr.splice(i, 1, 0);
+    }
+}
 
-
-
-console.log(arr);
+console.table(arr);
