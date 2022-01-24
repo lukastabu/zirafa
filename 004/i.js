@@ -41,16 +41,29 @@ console.log(random4, it4);
 
 
 console.log('------------5-------------');
-
 let times = 0;
 let it5 = 0;
 while (times != 3) {
     it5++;
     let random = rand(10, 20);
     if (random == 17) {
-        console.log(random);
         times++;
     }
 }
-
 console.log(times, it5);
+
+
+console.log('------------5+-------------');
+let timesPlus = 0;
+let it5Plus = 0;
+while (timesPlus != 5) {
+    it5Plus++;
+    let random = rand(10, 20);
+    // console.log(random);
+    if (random == 17) {
+        timesPlus++;
+    } else {
+        timesPlus = 0;
+    }
+}
+console.log(timesPlus, it5Plus);
