@@ -56,7 +56,7 @@ console.log(times, it5);
 console.log('------------5+-------------');
 let timesPlus = 0;
 let it5Plus = 0;
-while (timesPlus != 5) {
+while (timesPlus != 3) {
     it5Plus++;
     let random = rand(10, 20);
     // console.log(random);
@@ -67,3 +67,20 @@ while (timesPlus != 5) {
     }
 }
 console.log(timesPlus, it5Plus);
+
+let arr = [];
+
+for (let i = 0; i < 100; i++) {
+    arr.push(rand(0, 100));
+}
+
+
+
+
+
+
+
+
+
+
+console.log(arr);
