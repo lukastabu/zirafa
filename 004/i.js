@@ -75,6 +75,10 @@ for (let i = 0; i < 100; i++) {
 }
 
 
+for (let i = 0; i < 5; i++) {
+    arr.push(rand(0, 100));
+}
+
 
 
 
