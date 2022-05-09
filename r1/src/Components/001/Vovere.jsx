@@ -3,7 +3,7 @@ function Vovere() {
     return (
         <>
             <div>
-                <div>Voverė</div>
+                <div className="vovere">Voverė</div>
                 <b>Stora Voverė</b>
             </div>
             <h3>Voverių medis</h3>
