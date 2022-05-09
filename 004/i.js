@@ -117,3 +117,15 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 console.table(arr);
+
+const a = [4, 0, 5, 0, 0, 3, 5, 0, 4, 4, 4, 1, 3, 4, 1, 0, 0, 0, 0, 0];
+
+sum = 0;
+for (let i = 0; i < a.length; i++) {
+    sum += a[i];
+}
+
+
+a.sort((c, b) => b - c);
+console.log(a)
+console.log('Vidurkis:', sum / a.length);
