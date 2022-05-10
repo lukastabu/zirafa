@@ -1,7 +1,7 @@
 function Car(props) {
 
     return (
-        <h2>{props.color} {props.maker}</h2>
+        <h2 style={{fontSize: props.size + 'px'}}>{props.color} {props.maker}</h2>
     )
 }
 

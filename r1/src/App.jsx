@@ -6,9 +6,9 @@ function App() {
       <div className="App">
         <header className="App-header">
           <h1>PROPS</h1>
-          <Car maker="Opel" color="blue"></Car>
-          <Car maker="Volvo" color="dark red"></Car>
-          <Car maker="MB" color="silver"></Car>
+          <Car maker="Opel" color="blue" size="25"></Car>
+          <Car maker="Volvo" color="dark red" size="10"></Car>
+          <Car maker="MB" color="silver" size="14"></Car>
         </header>
       </div>
     );
