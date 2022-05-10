@@ -1,3 +1,5 @@
+import ColorMark from "./ColorMark";
+
 function Car(props) {
 
     return (
@@ -6,7 +8,7 @@ function Car(props) {
                 fontSize: props.size + 'px',
                 fontFamily: props.ff
             }
-        }>{props.color} {props.maker}</h2>
+        }>{props.color} {props.maker} <ColorMark></ColorMark></h2>
     )
 }
 
