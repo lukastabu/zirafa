@@ -8,7 +8,7 @@ function Car(props) {
                 fontSize: props.size + 'px',
                 fontFamily: props.ff
             }
-        }>{props.color} {props.maker} <ColorMark></ColorMark></h2>
+        }>{props.color} {props.maker} <ColorMark color={props.mark}></ColorMark></h2>
     )
 }
 
