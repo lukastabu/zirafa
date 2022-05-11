@@ -1,17 +1,19 @@
+import RainbowColor from "./RainbowColor";
+
 function Rainbow(props) {
 
     return (
         <div>
 
-        { 
-            props.colors.filter(c => c.pos === 'top').map((c, i) => <div key={i} className="rcolor" style={{backgroundColor: c.color, height: (c.size > 30 ? c.size : 30) + 'px' }}></div>) 
-        }
+            {
+                props.colors.filter(c => c.pos === 'top').map((c, i) => <RainbowColor key={i} color={c}></RainbowColor>)
+            }
 
-        <div className="rcolor" style={{backgroundColor: 'black', height: '20px'}}></div>
+            <RainbowColor color={{ color: 'black', size: 20 }}></RainbowColor>
 
-        { 
-            props.colors.filter(c => c.pos === 'bottom').map((c, i) => <div key={i} className="rcolor" style={{backgroundColor: c.color, height: (c.size > 30 ? c.size : 30) + 'px' }}></div>) 
-        }
+            {
+                props.colors.filter(c => c.pos === 'bottom').map((c, i) => <RainbowColor key={i} color={c}></RainbowColor>)
+            }
 
 
         </div>
