@@ -4,7 +4,7 @@ function Rainbow(props) {
         <div>
 
         { 
-            props.colors.sort((a, b) => b.size - a.size).map((c, i) => <div key={i} className="rcolor" style={{backgroundColor: c.color, height: c.size + 'px' }}></div>) 
+            props.colors.map((c, i) => <div key={i} className="rcolor" style={{backgroundColor: c.color, height: (c.size > 30 ? c.size : 30) + 'px' }}></div>) 
         }
 
         </div>
