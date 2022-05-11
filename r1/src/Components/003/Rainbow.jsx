@@ -4,7 +4,7 @@ function Rainbow(props) {
         <div>
 
         { 
-            props.colors.filter(c => 'skyblue' !== c).map((c, i) => <div key={i} className="rcolor" style={{backgroundColor: c}}></div>) 
+            props.colors.map((c, i) => <div key={i} className="rcolor" style={{backgroundColor: c.color}}></div>) 
         }
 
         </div>

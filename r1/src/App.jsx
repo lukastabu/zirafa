@@ -11,13 +11,13 @@ import Rainbow from './Components/003/Rainbow';
 // ];
 
 const rainbow = [
-    'crimson',
-    'orange',
-    'yellow',
-    'green',
-    'skyblue',
-    'darkblue',
-    'darkmagenta'
+    {color: 'crimson', size: 30},
+    {color: 'orange', size: 14},
+    {color: 'yellow', size: 52},
+    {color: 'green', size: 27},
+    {color: 'skyblue', size: 40},
+    {color: 'darkblue', size: 17},
+    {color: 'darkmagenta', size: 22}
 ];
 
 function App() {
