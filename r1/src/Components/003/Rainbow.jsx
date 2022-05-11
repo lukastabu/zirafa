@@ -4,7 +4,7 @@ function Rainbow(props) {
         <div>
 
         { 
-            props.colors.map((c, i) => <div key={i}>{c}</div>) 
+            props.colors.map((c, i) => <div key={i} className="rcolor" style={{backgroundColor: c}}></div>) 
         }
 
         </div>

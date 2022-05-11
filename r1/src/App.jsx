@@ -1,21 +1,21 @@
 import './App.css';
-import CarsList from './Components/003/CarsList';
+// import CarsList from './Components/003/CarsList';
 import Rainbow from './Components/003/Rainbow';
 
-const cars = [
-    'Opel',
-    'MB',
-    'FIAT',
-    'Ford',
-    'Kamaz'
-];
+// const cars = [
+//     'Opel',
+//     'MB',
+//     'FIAT',
+//     'Ford',
+//     'Kamaz'
+// ];
 
 const rainbow = [
     'crimson',
     'orange',
     'yellow',
     'green',
-    'skyblu',
+    'skyblue',
     'darkblue',
     'darkmagent'
 ];
