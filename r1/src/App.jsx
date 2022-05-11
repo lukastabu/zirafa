@@ -1,5 +1,6 @@
 import './App.css';
 import CarsList from './Components/003/CarsList';
+import Rainbow from './Components/003/Rainbow';
 
 const cars = [
     'Opel',
@@ -9,12 +10,22 @@ const cars = [
     'Kamaz'
 ];
 
+const rainbow = [
+    'crimson',
+    'orange',
+    'yellow',
+    'green',
+    'skyblu',
+    'darkblue',
+    'darkmagent'
+];
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <h1>LISTS</h1>
-            <CarsList cars={cars}></CarsList>
+            <Rainbow colors={rainbow}></Rainbow>
       </header>
     </div>
   );
