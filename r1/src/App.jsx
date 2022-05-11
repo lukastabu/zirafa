@@ -17,7 +17,7 @@ const rainbow = [
     'green',
     'skyblue',
     'darkblue',
-    'darkmagent'
+    'darkmagenta'
 ];
 
 function App() {
