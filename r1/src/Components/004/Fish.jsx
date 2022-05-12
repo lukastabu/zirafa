@@ -1,9 +1,8 @@
-function Fish(props) {
+function Fish() {
 
-    if (props.show) {
+  
         return <div className="blue-square"></div>
-    }
-    return null;
+
 
 }
 

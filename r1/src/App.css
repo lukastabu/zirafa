@@ -91,10 +91,12 @@ h3 {
     height: 400px;
     background-color: #61dafb;
     border-radius: 50%;
+    flex-wrap: wrap;
 }
 
 .blue-square {
     width: 40px;
     height: 40px;
     background-color: darkblue;
+    margin: 5px;
 }

@@ -9,7 +9,6 @@ function App() {
       <header className="App-header">
         <h1>State</h1>
         {/* <FatCat color="Brown"></FatCat>
-        
         <FatDog color="crimson"></FatDog> */}
 
         <Lake></Lake>

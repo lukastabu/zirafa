@@ -5,20 +5,25 @@ class Lake extends React.Component {
 
     constructor() {
         super();
-        this.state = { show: true }; 
+        this.state = { fish: [] }; 
     }
 
     show = () => {
-        this.setState(s => ({ show: !s.show}));
+        const fish = [...this.state.fish];
+        fish.push(1);
+        this.setState({ fish: fish });
     }
 
     render() {
         return (
             <>
             <div className="lake">
-                <Fish show={this.state.show}></Fish>
+                {
+                    this.state.fish.map((_, i) => <Fish key={i}></Fish>)
+                }
+                
             </div>
-            <button onClick={this.show}>Show Hide Fish</button>
+            <button onClick={this.show}>Add Fish</button>
             </>
         );
     }
