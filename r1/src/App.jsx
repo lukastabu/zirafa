@@ -1,14 +1,18 @@
 import './App.css';
-import FatCat from './Components/004/FatCat';
-import FatDog from './Components/004/FatDog';
+// import FatCat from './Components/004/FatCat';
+// import FatDog from './Components/004/FatDog';
+import Lake from './Components/004/Lake';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <h1>State</h1>
-        <FatCat color="Brown"></FatCat>
-        <FatDog color="crimson"></FatDog>
+        {/* <FatCat color="Brown"></FatCat>
+        
+        <FatDog color="crimson"></FatDog> */}
+
+        <Lake></Lake>
       </header>
     </div>
   );
