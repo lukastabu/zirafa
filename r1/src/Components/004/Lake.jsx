@@ -19,7 +19,7 @@ class Lake extends React.Component {
             <>
             <div className="lake">
                 {
-                    this.state.fish.map((_, i) => <Fish key={i}></Fish>)
+                    this.state.fish.map((_, i) => <Fish key={i} number={i}></Fish>)
                 }
                 
             </div>
