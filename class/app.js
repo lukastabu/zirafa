@@ -24,9 +24,7 @@ const cat2 = new Cat('Pūkis', 7);
 cat2.color = 'white';
 
 
-
 console.log(cat1);
-
 console.log(cat2);
 
 cat1.sayCatName();
