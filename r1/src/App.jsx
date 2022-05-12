@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>State</h1>
-        <FatCat></FatCat>
+        <FatCat color="Brown"></FatCat>
       </header>
     </div>
   );

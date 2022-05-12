@@ -4,7 +4,7 @@ class FatCat extends React.Component {
 
     render() {
         return (
-            <h2>Fat Cat</h2>
+            <h2>Fat Cat {this.props.color}</h2>
         );
     }
     
