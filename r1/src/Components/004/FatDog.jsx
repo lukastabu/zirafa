@@ -8,7 +8,7 @@ class FatDog extends React.Component {
     }
 
     spust = () => {
-        this.setState({font: 40})
+        this.setState(f => (f.font === 20 ? {font: 40} : {font : 20}))
     }
 
     render() {
