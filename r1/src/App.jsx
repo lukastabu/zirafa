@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.scss';
+import randColor from './Functions/randColor';
 
 function App() {
 
@@ -18,7 +19,10 @@ function App() {
 
     const changeColor = color => setColor(color);
 
-    const addSquare = () => setSq(s => [...s, 1]);
+    const addSquare = () => {
+        // setSq(s => [...s, (s[s.length - 1] ?? 0) + 1]);
+        setSq(s => [...s, randColor()]);
+    }
 
 
     return (
@@ -26,7 +30,9 @@ function App() {
             <header className="App-header">
                 <div className="sqc">
                     {
-                        sq.map((_, i) => <div className="sq red" key={i}></div>)
+                        sq.map((s, i) => (
+                        <div className="sq red" key={i} style={{background: s}}></div>)
+                        )
                     }
                 </div>
                 <div className="sqc">
