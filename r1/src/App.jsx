@@ -24,16 +24,20 @@ function App() {
     //     setColor('yellow');
     // }
 
+    // const addOne = () => {
+    //     setOne(o => o + 1);
+    // }
+
+    // const remOne = () => {
+    //     setOne(o => o - 1);
+    // }
+
+    const doMath = number => {
+        setOne(o => o + number);
+    }
+
     const changeColor = color => {
         setColor(color);
-    }
-
-    const addOne = () => {
-        setOne(o => o + 1);
-    }
-
-    const remOne = () => {
-        setOne(o => o - 1);
     }
 
     return (
@@ -51,8 +55,8 @@ function App() {
                 <button onClick={() => changeColor('red')}>Make Red</button>
                 <button onClick={() => changeColor('yellow')}>Make Yellow</button>
                 <button onClick={() => changeColor('pink')}>Make Pink</button>
-                <button onClick={addOne}>Add One</button>
-                <button onClick={remOne}>Remove One</button>
+                <button onClick={() => doMath(1)}>Add One</button>
+                <button onClick={() => doMath(-1)}>Remove One</button>
             </header>
         </div>
     );
