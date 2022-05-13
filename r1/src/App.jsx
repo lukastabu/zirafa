@@ -16,12 +16,16 @@ function App() {
         setShow1(s => !s);
     }
 
-    const makeRed = () => {
-        setColor('red');
-    }
+    // const makeRed = () => {
+    //     setColor('red');
+    // }
 
-    const makeYellow = () => {
-        setColor('yellow');
+    // const makeYellow = () => {
+    //     setColor('yellow');
+    // }
+
+    const changeColor = color => {
+        setColor(color);
     }
 
     const addOne = () => {
@@ -44,8 +48,9 @@ function App() {
                 <h1>HOOK {one}</h1>
                 <button onClick={doShow}>Show/Hide 1</button>
                 <button onClick={doShow1}>Show/Hide 2</button>
-                <button onClick={makeRed}>Make Red</button>
-                <button onClick={makeYellow}>Make Yellow</button>
+                <button onClick={() => changeColor('red')}>Make Red</button>
+                <button onClick={() => changeColor('yellow')}>Make Yellow</button>
+                <button onClick={() => changeColor('pink')}>Make Pink</button>
                 <button onClick={addOne}>Add One</button>
                 <button onClick={remOne}>Remove One</button>
             </header>
