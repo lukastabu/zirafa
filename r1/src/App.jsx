@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css';
+import './App.scss';
 
 function App() {
 
@@ -19,6 +19,10 @@ function App() {
         setColor('red');
     }
 
+    const makeYellow = () => {
+        setColor('yellow');
+    }
+
     return (
         <div className="App">
             <header className="App-header">
@@ -32,6 +36,7 @@ function App() {
                 <button onClick={doShow}>Show/Hide</button>
                 <button onClick={doShow1}>Show/Hide</button>
                 <button onClick={makeRed}>Make Red</button>
+                <button onClick={makeYellow}>Make Yellow</button>
             </header>
         </div>
     );
