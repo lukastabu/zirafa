@@ -184,3 +184,16 @@ button {
 .small {
     font-size: 33px;
 }
+
+.kvadratas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dotted white;
+    width: 400px;
+    height: 400px;
+    .kvadratas {
+        width: 100px;
+        height: 100px;
+    }
+}
