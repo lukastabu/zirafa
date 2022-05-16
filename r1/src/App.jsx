@@ -7,8 +7,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Labas</h1>
-        <Vienas skaicius={1} spalva="black"></Vienas>
-        <Antras skaicius={5} spalva="pink"></Antras>
+        <Vienas skaicius={1} spalva="black" klase="small"></Vienas>
+        <Antras skaicius={5} spalva="pink" klase="big"></Antras>
       </header>
     </div>
   );

@@ -1,9 +1,9 @@
-function Antras({skaicius, spalva}) {
+function Antras({skaicius, spalva, klase}) {
 
     return (
         <>
             {
-                skaicius + 2 > 9 ? null : <h2 style={{color: spalva}}>{skaicius + 1}</h2>
+                skaicius + 2 > 9 ? null : <h2 className={klase} style={{color: spalva}}>{skaicius + 1}</h2>
             }
         </>
     )
