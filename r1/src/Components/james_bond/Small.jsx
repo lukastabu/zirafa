@@ -1,4 +1,8 @@
-function Small({side}) {
+function Small({side, sc}) {
+
+    if (!sc) {
+        return null;
+    }
 
     return (
         <div className="too-small" style={
