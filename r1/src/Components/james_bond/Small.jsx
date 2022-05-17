@@ -5,7 +5,7 @@ function Small({side, sc}) {
     }
 
     return (
-        <div className="too-small" style={
+        <div className="too-small clickable" style={
             {
                 left: side === 'left' ? '-10px' : null,
                 right: side === 'right' ? '-10px' : null,
