@@ -13,7 +13,8 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <h1 onClick={clickLabas}>Labas</h1>
+                <h1 className="clickable" onClick={clickLabas}
+                style={{letterSpacing: sc ? '0.7px' : '8px'}}>Labas</h1>
                 <BlueSquare sc={sc}></BlueSquare>
             </header>
         </div>

@@ -222,3 +222,8 @@ button {
         border-radius: 50%;
     }
 }
+
+.clickable {
+    cursor: pointer;
+    transition: all 0.7s;
+}
