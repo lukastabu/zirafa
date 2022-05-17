@@ -1,7 +1,7 @@
 import { useState } from "react";
 import randColor from '../../Functions/randColor';
 
-function BlueSquare() {
+function BlueSquare({sc}) {
 
     const [bg, setBg] = useState('blue');
     const [border, setBorder] = useState(1);
@@ -22,11 +22,12 @@ function BlueSquare() {
         <div className="kvadratas" style={
             {
                 backgroundColor: bg,
-                borderWidth: border + 'px'
+                borderWidth: border + 'px',
+                borderRadius: sc ? '50%' : '0'
             }
             }>
             <button onClick={changeBg}>Change</button>
-            <button onClick={changeRand}>Change rand</button>
+            <button onClick={changeRand}>-Rand-</button>
             <button onClick={changeBorder}>Change border</button>
         </div>
     )
