@@ -1,4 +1,5 @@
 import { useState } from "react";
+import randColor from '../../Functions/randColor';
 
 function BlueSquare() {
 
@@ -8,9 +9,14 @@ function BlueSquare() {
         setBg('red');
     }
 
+    const changeRand = () => {
+        setBg(randColor());
+    }
+
     return (
         <div className="kvadratas" style={{backgroundColor: bg}}>
-            <button onClick={changeBg}>Change Color</button>
+            <button onClick={changeBg}>Change red</button>
+            <button onClick={changeRand}>Change rand</button>
         </div>
     )
 }
