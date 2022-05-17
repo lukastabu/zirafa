@@ -6,7 +6,7 @@ function BlueSquare() {
     const [bg, setBg] = useState('blue');
 
     const changeBg = () => {
-        setBg('red');
+        setBg(c => c === 'blue' ? 'red' : 'blue');
     }
 
     const changeRand = () => {
@@ -15,7 +15,7 @@ function BlueSquare() {
 
     return (
         <div className="kvadratas" style={{backgroundColor: bg}}>
-            <button onClick={changeBg}>Change red</button>
+            <button onClick={changeBg}>Change</button>
             <button onClick={changeRand}>Change rand</button>
         </div>
     )
