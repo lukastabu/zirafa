@@ -190,6 +190,7 @@ button {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     border: 2px dotted white;
     width: 400px;
     height: 400px;
