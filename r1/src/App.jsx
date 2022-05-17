@@ -7,7 +7,7 @@ function App() {
     const [sc, setSc] = useState(false);
 
     const clickLabas = () => {
-        setSc(true);
+        setSc(s => !s);
     }
 
     return (
