@@ -1,7 +1,12 @@
-function Small() {
+function Small({side}) {
 
     return (
-        <div className="too-small"></div>
+        <div className="too-small" style={
+            {
+                left: side === 'left' ? '-10px' : null,
+                right: side === 'right' ? '-10px' : null,
+            }
+        }></div>
     )
 }
 

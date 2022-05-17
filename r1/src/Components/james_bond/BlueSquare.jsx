@@ -30,7 +30,8 @@ function BlueSquare({sc}) {
             <button onClick={changeBg}>Change</button>
             <button onClick={changeRand}>-Rand-</button>
             <button onClick={changeBorder}>Change border</button>
-            <Small></Small>
+            <Small side="left"></Small>
+            <Small side="right"></Small>
         </div>
     )
 }
