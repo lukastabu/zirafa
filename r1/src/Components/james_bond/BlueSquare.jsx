@@ -1,5 +1,6 @@
 import { useState } from "react";
 import randColor from '../../Functions/randColor';
+import Small from "./Small";
 
 function BlueSquare({sc}) {
 
@@ -29,6 +30,7 @@ function BlueSquare({sc}) {
             <button onClick={changeBg}>Change</button>
             <button onClick={changeRand}>-Rand-</button>
             <button onClick={changeBorder}>Change border</button>
+            <Small></Small>
         </div>
     )
 }
