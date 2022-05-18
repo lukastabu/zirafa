@@ -6,16 +6,21 @@ import {useState} from 'react';
 function App() {
 
     const [mrGreen, setMrGreen] = useState('green');
+    const [nr, setNr] = useState(1);
 
     const clickButton = () => {
-        setMrGreen('pink')
+        setMrGreen(s => s ==='pink' ? 'green' : 'pink');
+    }
+
+    const clickPlus = () => {
+        setNr(n => n + 1);
     }
 
     return (
         <div className="App">
             <header className="App-header">
-                <h1>Uplifting</h1>
-                <Button clickButton={clickButton}></Button>
+                <h1>Uplifting <span style={{color:'green'}}>{nr}</span></h1>
+                <Button clickButton={clickButton} clickPlus={clickPlus}></Button>
                 <MrGreen mrGreen={mrGreen}></MrGreen>
             </header>
         </div>
