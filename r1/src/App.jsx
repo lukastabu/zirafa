@@ -1,21 +1,28 @@
-import { useState } from 'react';
 import './App.scss';
-import BlueSquare from './Components/james_bond/BlueSquare';
 
-function App() {
+import {useState} from 'react';
+import MrGreen from './Components/MrGreen';
+import Button from './Components/Button';
 
-    const [sc, setSc] = useState(false);
-
-    const clickLabas = () => {
-        setSc(s => !s);
-    }
-
+ function App() {
+ 
+    const [mrGreen, setMrGreen] = useState('green');
+    // const [nr, setnNr] = useState(1);
+ 
+    const clickButton = () => (
+         setMrGreen(s => s==='pink' ? 'green' : 'pink')
+    )
+ 
+    // const clickPlus = () => {
+    //     setnNr (n => n+1);
+    // }
+    
     return (
         <div className="App">
             <header className="App-header">
-                <h1 className="clickable" onClick={clickLabas}
-                style={{letterSpacing: sc ? '0.7px' : '8px'}}>Labas</h1>
-                <BlueSquare sc={sc}></BlueSquare>
+                <h1>Uplifting</h1>
+                <Button clickButton={clickButton}></Button>
+                <MrGreen mrGreen={mrGreen}></MrGreen>
             </header>
         </div>
     );
